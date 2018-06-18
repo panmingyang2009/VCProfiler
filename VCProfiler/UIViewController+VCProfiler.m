@@ -112,7 +112,7 @@ static void pmy_viewDidAppear(UIViewController *kvo_self, SEL _sel, BOOL animate
 @implementation MTHFakeKVORemover
 
 - (void)dealloc {
-    NSLog(@"dealloc: %@", _target);
+    VCLog(@"dealloc: %@", _target);
     [_target removeObserver:[MTHFakeKVOObserver shared] forKeyPath:_keyPath];
     _target = nil;
 }
@@ -167,7 +167,7 @@ static void pmy_viewDidAppear(UIViewController *kvo_self, SEL _sel, BOOL animate
     // ViewController
     Class originCls = class_getSuperclass(kvoCls);
 
-    NSLog(@"Hook %@", kvoCls);
+    VCLog(@"Hook %@", kvoCls);
 
     // 获取原来实现的encoding
     const char *originLoadViewEncoding = method_getTypeEncoding(class_getInstanceMethod(originCls, @selector(loadView)));
