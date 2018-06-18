@@ -1,0 +1,16 @@
+PODS:
+  - VCProfiler (0.0.1)
+
+DEPENDENCIES:
+  - VCProfiler (from `../`)
+
+EXTERNAL SOURCES:
+  VCProfiler:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  VCProfiler: aa1caa4fd8a4663f23c870887e65648414d856d2
+
+PODFILE CHECKSUM: bf3808f74ffec6345cfcfbe8aadffbf87723fa6f
+
+COCOAPODS: 1.5.3
