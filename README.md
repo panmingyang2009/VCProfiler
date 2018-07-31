@@ -1,6 +1,6 @@
 # VCProfiler
 
-An easy and simple tool to measure the time cost of every view controller.
+An **accurate** and **simple** tool uses KVO to measure the time cost of **every** view controller.
 
 ## Usage
 
@@ -8,7 +8,7 @@ You can install VCProfiler either by CocoaPods or dragging source files directly
 If you are using CocoaPods, please add following line to your `podfile`:
 
 ```ruby
-    pod 'VCProfiler'
+pod 'VCProfiler'
 ```
 
 After that, just build and run your App. VCProfiler will print timestamps to console automatically when a view controller show up.
